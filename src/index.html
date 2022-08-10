@@ -6,9 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портал «Music Box» - vadym</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <div class="bunner">
+
+        <header class="header">
+            <div class="header__logo">
+                <div class="logo__image"></div>
+                <div class="logo__text">Music box</div>
+            </div>
+            <nav class="header__nav">
+                <a class="nav__items nav__items_white" href="">Главная</a>
+                <a class="nav__items" href="">Каталог</a>
+                <a class="nav__items" href="">Исполнители</a>
+                <a class="nav__items" href="">Контакты</a>
+            </nav>
+            <div class="header__search">
+                <label for="search" class="sr-only">Имя</label>
+                <input id="search" type="search" class="search" name="q" placeholder="поиск...">
+            </div>
+        </header>
+
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>без ограничений</h2>
+        <p class="text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+
+        <form id="page-description" class="form">
+            <label for="name" class="sr-only">Имя</label>
+            <input id="name" type="text" class="form__value" placeholder="Имя">
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" type="email" class="form__value" placeholder="Email">
+            <input type="submit" class="form__button" value="Получить доступ">
+        </form>
+
+    </div>
 
 </body>
 
