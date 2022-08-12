@@ -11,38 +11,37 @@
 
 <body>
 
-    <div class="bunner">
+    <header class="header">
+        <div class="logo">
+            <div class="logo__image"></div>
+            Music box
+        </div>
+        <nav class="nav">
+            <a class="nav__item nav__item_white" href="">Главная</a>
+            <a class="nav__item" href="">Каталог</a>
+            <a class="nav__item" href="">Исполнители</a>
+            <a class="nav__item" href="">Контакты</a>
+        </nav>
+        <form class="header__search">
+            <label for="search" class="sr-only">Имя</label>
+            <input id="search" type="search" class="search" name="q" placeholder="поиск...">
+        </form>
+    </header>
 
-        <header class="header">
-            <div class="header__logo">
-                <div class="logo__image"></div>
-                <div class="logo__text">Music box</div>
-            </div>
-            <nav class="header__nav">
-                <a class="nav__items nav__items_white" href="">Главная</a>
-                <a class="nav__items" href="">Каталог</a>
-                <a class="nav__items" href="">Исполнители</a>
-                <a class="nav__items" href="">Контакты</a>
-            </nav>
-            <div class="header__search">
-                <label for="search" class="sr-only">Имя</label>
-                <input id="search" type="search" class="search" name="q" placeholder="поиск...">
-            </div>
-        </header>
-
+    <section id="page-description" class="banner">
         <h1>Онлайн музыка где угодно</h1>
         <h2>без ограничений</h2>
-        <p class="text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <p class="banner__text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
 
-        <form id="page-description" class="form">
+        <form class="form">
             <label for="name" class="sr-only">Имя</label>
             <input id="name" type="text" class="form__value" placeholder="Имя">
             <label for="email" class="sr-only">Email</label>
             <input id="email" type="email" class="form__value" placeholder="Email">
-            <input type="submit" class="form__button" value="Получить доступ">
+            <input type="submit" class="button button_registration" value="Получить доступ">
         </form>
 
-    </div>
+    </section>
 
 </body>
 

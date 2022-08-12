@@ -40,19 +40,18 @@ h4 {
   text-transform: uppercase;
 }
 
-.text {
-  margin: 31px 0 16px;
-}
-
-.bunner {
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 200px;
+  padding: 200px 20px;
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
+}
+.banner__text {
+  margin: 31px 0 16px;
 }
 
 .header {
@@ -66,22 +65,17 @@ h4 {
   font-size: 11px;
   color: #FFFFFF;
   text-transform: uppercase;
+  z-index: 2;
 }
-.header__logo {
+.header__search {
+  margin-left: 31.3%;
+}
+
+.logo {
   display: flex;
   align-items: center;
   column-gap: 16px;
 }
-.header__nav {
-  display: flex;
-  align-items: center;
-  margin-left: 90px;
-  column-gap: 24px;
-}
-.header__search {
-  margin-left: 451px;
-}
-
 .logo__image {
   width: 24px;
   height: 24px;
@@ -89,11 +83,17 @@ h4 {
   background-size: contain;
 }
 
-.nav__items {
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  column-gap: 24px;
+}
+.nav__item {
   text-decoration: none;
   color: #cacaca;
 }
-.nav__items_white {
+.nav__item_white {
   color: #FFFFFF;
 }
 
@@ -119,16 +119,18 @@ h4 {
   font-size: 14px;
   font-weight: bold;
 }
-.form__button {
+
+.button {
   font-family: Arial, sans-serif;
   font-size: 13.3px;
   color: #FFFFFF;
-  width: 100%;
   padding: 20px 30px;
   text-transform: uppercase;
-  border: none;
   border-radius: 5px;
+}
+.button_registration {
   width: 100%;
+  border: none;
   background-color: #34C176;
 }
 
@@ -156,18 +158,15 @@ h4 {
   padding-left: 10px;
 }
 
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 38px;
-  }
+h1 {
+  font-size: 60px;
 }
-@media (max-width: 415px) {
-  .bunner {
-    padding: 250px 20px 200px;
-  }
+
+h2 {
+  font-size: 38px;
+}
+
+@media (max-width: 1200px) {
   h1 {
     font-size: 30px;
   }
@@ -175,16 +174,27 @@ h4 {
     font-size: 18px;
   }
   .header {
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 0 20px;
   }
-  .header__nav {
+  .header__search {
+    margin: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .banner {
+    padding: 250px 20px 200px;
+  }
+  .header {
     flex-direction: column;
-    align-items: flex-start;
-    margin: 17px 0 18px;
   }
   .header__search {
     margin: 0;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 17px 0 18px;
   }
   .search {
     width: 100%;
