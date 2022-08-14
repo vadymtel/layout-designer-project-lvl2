@@ -359,8 +359,73 @@ h1 {
         background-color: $brown;
         margin-bottom: 100px;
     }
+}
 
+.footer {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
+    &__up-block {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 4%;
+        padding: 3rem 100px;
+        border-bottom: 1px solid $base-color;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 22%;
+
+        &_row {
+            display: flex;
+            align-items: baseline;
+            column-gap: 24px;
+        }
+    }
+
+    &__item {
+        font-size: 18px;
+        font-weight: bold;
+        color: $white;
+        padding: 30px 0 15px;
+    }
+
+    &__down-block {
+        padding: 2rem 100px;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 16px;
+        color: $lt-gray;
+        cursor: pointer;
+
+        &_picto_google::before {
+            content: url("../images/google+.png");
+            width: fit-content;
+            height: auto;
+        }
+
+        &_picto_twitter::before {
+            content: url("../images/twitter.png");
+            width: fit-content;
+        }
+
+        &_picto_facebook::before {
+            content: url("../images/facebook.png");
+            width: fit-content;
+        }
+
+        &_picto_instagram::before {
+            content: url("../images/instagram.png");
+            width: fit-content;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -434,5 +499,12 @@ h1 {
     .app__image {
         order: -1;
         margin: 0 auto;
+    }
+
+    .footer__up-block,
+    .footer__down-block {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
