@@ -496,7 +496,7 @@ h1 {
 
 .pop-track {
     display: flex;
-    flex-basis: 48.3%;
+    width: 575px;
 
     &__image {
         width: 55px;
@@ -517,8 +517,6 @@ h1 {
     }
 
     &__track-name {
-        font-weight: bold;
-        text-transform: uppercase;
         color: $white;
     }
 
@@ -527,6 +525,40 @@ h1 {
     }
 
     &__track-time {}
+}
+
+#page-discography {
+    padding: 100px 120px 0;
+}
+
+.discography {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px 50px;
+
+    &__item {
+        width: 250px;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__name {
+        padding-top: 18px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+
+    &__year {
+        color: $lt-gray ;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -564,6 +596,9 @@ h1 {
         padding: 100px 20px 0;
     }
 
+    #page-discography {
+        padding: 100px 20px 0;
+    }
 }
 
 
@@ -615,5 +650,9 @@ h1 {
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .discography__item {
+        width: 137px;
     }
 }
