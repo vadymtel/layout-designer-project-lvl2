@@ -33,26 +33,13 @@ h1 {
     font-size: 60px;
 }
 
-.title-page {
+.page-title {
     font-size: 38px;
     padding-bottom: 48px;
 
     &_pricing {
         padding-bottom: 45px;
     }
-}
-
-.page-text {
-
-    &_banner {
-        margin: 31px auto 16px;
-    }
-
-    &_pricing {
-        margin: -10px auto 0;
-    }
-
-    &_news {}
 }
 
 .banner {
@@ -65,12 +52,16 @@ h1 {
     background-position: center;
     background-size: cover;
 
-    &_bg_main {
+    &_bg-main {
         background-image: url("../images/banner.png");
     }
 
-    &_bg_artist {
+    &_bg-artist {
         background-image: url("../images/morten_harket.png");
+    }
+
+    &_text {
+        margin: 31px auto 16px;
     }
 }
 
@@ -90,6 +81,22 @@ h1 {
 
     &__search {
         margin-left: 31.3%;
+    }
+
+    &__search-field {
+        min-width: 248px;
+        height: 25px;
+        border: none;
+        border-radius: 50px;
+
+        background-color: $dark-grey;
+
+        &::placeholder {
+            font-family: Arial, sans-serif;
+            font-size: 13.3px;
+            color: $search-color;
+            padding-left: 10px;
+        }
     }
 }
 
@@ -178,22 +185,6 @@ h1 {
     border: 0;
 }
 
-.search {
-    min-width: 248px;
-    height: 25px;
-    border: none;
-    border-radius: 50px;
-
-    background-color: $dark-grey;
-
-    &::placeholder {
-        font-family: Arial, sans-serif;
-        font-size: 13.3px;
-        color: $search-color;
-        padding-left: 10px;
-    }
-}
-
 #page-pricing,
 #page-news,
 #page-app {
@@ -213,23 +204,19 @@ h1 {
         flex-shrink: 1;
         padding: 0 1.5rem;
         border-radius: 1rem;
+        background-position: center;
+        background-size: cover;
 
-        &_bg-1 {
-            background-image: url("../images/subscribe_1.png");
-            background-position: center;
-            background-size: cover;
+        &_bg-chart {
+            background-image: url("../images/subscribe_chart.png");
         }
 
-        &_bg-2 {
-            background-image: url("../images/subscribe_2.png");
-            background-position: center;
-            background-size: cover;
+        &_bg-microphone {
+            background-image: url("../images/subscribe_microphone.png");
         }
 
-        &_bg-3 {
-            background-image: url("../images/subscribe_3.png");
-            background-position: center;
-            background-size: cover;
+        &_bg-nightclub {
+            background-image: url("../images/subscribe_nightclub.png");
         }
     }
 
@@ -265,6 +252,10 @@ h1 {
         font-size: 12.8px;
         padding: 64px 0;
     }
+
+    &_text {
+        margin: -10px auto 0;
+    }
 }
 
 .news {
@@ -284,7 +275,7 @@ h1 {
         height: auto;
         flex-grow: 1;
 
-        &_order_2 {
+        &_order-2 {
             order: 2;
         }
 
@@ -371,7 +362,7 @@ h1 {
 .footer {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
-    &__up-block {
+    &__top-block {
         display: flex;
         flex-wrap: wrap;
         column-gap: 4%;
@@ -399,7 +390,7 @@ h1 {
         padding: 30px 0 15px;
     }
 
-    &__down-block {
+    &__botom-block {
         padding: 2rem 100px;
         display: flex;
         align-items: flex-start;
@@ -446,7 +437,7 @@ h1 {
         color: $white;
     }
 
-    &__btn-block {
+    &__btn-wrapper {
         margin: 48px 0 0;
         display: flex;
         flex-wrap: wrap;
@@ -461,22 +452,24 @@ h1 {
         font-size: 12.8px;
         border: none;
 
-
+        &_violet::before,
+        &_brown::before {
+            margin-right: 16px;
+            display: inline-block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            filter: invert(100%);
+            background-size: contain;
+            background-position: center;
+        }
 
         &_violet {
             background-color: $violet;
 
             &::before {
-                margin-right: 16px;
-                display: inline-block;
-                content: "";
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
                 background-image: url("../images/play-button.svg");
-                filter: invert(100%);
-                background-size: contain;
-                background-position: center;
             }
         }
 
@@ -484,19 +477,56 @@ h1 {
             background-color: $brown;
 
             &::before {
-                margin-right: 16px;
-                display: inline-block;
-                content: "";
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
                 background-image: url("../images/heart.svg");
-                filter: invert(100%);
-                background-size: contain;
-                background-position: center;
             }
         }
     }
+}
+
+.page-popular-track {
+    padding: 100px 120px 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px 50px;
+    flex-wrap: wrap;
+}
+
+.pop-track {
+    display: flex;
+    flex-basis: 48.3%;
+
+    &__image {
+        width: 55px;
+        height: 55px;
+    }
+
+    &__track-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    &__track {
+        font-size: 12.8px;
+    }
+
+    &__track-name {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__artist {
+        color: $lt-gray;
+    }
+
+    &__track-time {}
 }
 
 @media (max-width: 1200px) {
@@ -504,7 +534,7 @@ h1 {
         font-size: 30px;
     }
 
-    .title-page {
+    .page-title {
         font-size: 18px;
     }
 
@@ -530,6 +560,10 @@ h1 {
         padding: 50px 0 24px;
     }
 
+    .page-popular-track {
+        padding: 100px 20px 0;
+    }
+
 }
 
 
@@ -552,7 +586,7 @@ h1 {
         margin: 17px 0 18px;
     }
 
-    .search {
+    .header__search-field {
         width: 100%;
     }
 
@@ -567,7 +601,7 @@ h1 {
         margin: 16px auto 200px;
     }
 
-    .news__image_order_2 {
+    .news__image {
         order: 0;
     }
 
@@ -576,8 +610,8 @@ h1 {
         margin: 0 auto;
     }
 
-    .footer__up-block,
-    .footer__down-block {
+    .footer__top-block,
+    .footer__botom-block {
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
