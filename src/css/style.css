@@ -466,32 +466,45 @@ h1 {
 .pop-track__artist {
   color: #E0E0E0;
 }
-#page-discography {
+#page-discography,
+#page-similar {
   padding: 100px 120px 0;
+  text-align: left;
 }
 
-.discography {
+.discography,
+.similar {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 25px 50px;
 }
-.discography__item {
+.discography__item,
+.similar__item {
   width: 250px;
 }
-.discography__image {
+.discography__image,
+.similar__image {
   width: 100%;
   height: auto;
 }
-.discography__info {
-  text-align: left;
-}
-.discography__name {
+.discography__name,
+.similar__name {
   padding-top: 18px;
   font-size: 18px;
   text-transform: capitalize;
 }
-.discography__year {
+
+.discography__info {
+  text-align: left;
+}
+
+.similar__info {
+  text-align: center;
+}
+
+.discography__year,
+.similar__supporters {
   color: #E0E0E0;
 }
 
@@ -524,7 +537,8 @@ h1 {
   .page-popular-track {
     padding: 100px 20px 0;
   }
-  #page-discography {
+  #page-discography,
+#page-similar {
     padding: 100px 20px 0;
   }
 }
@@ -566,7 +580,8 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .discography__item {
+  .discography__item,
+.similar__item {
     width: 137px;
   }
 }
