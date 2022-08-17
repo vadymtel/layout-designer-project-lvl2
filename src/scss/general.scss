@@ -370,6 +370,20 @@ h1 {
     }
 }
 
+hr {
+    margin: 8px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
 .footer {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
@@ -378,7 +392,6 @@ h1 {
         flex-wrap: wrap;
         column-gap: 4%;
         padding: 3rem 120px;
-        border-bottom: 1px solid $base-color;
     }
 
     &__items {
@@ -396,12 +409,12 @@ h1 {
 
     &__item {
         font-size: 18px;
-        font-weight: bold;
         color: $white;
-        padding: 30px 0 15px;
+        margin: 30px 0 16px;
     }
 
     &__botom-block {
+
         padding: 2rem 120px;
         display: flex;
         align-items: flex-start;
