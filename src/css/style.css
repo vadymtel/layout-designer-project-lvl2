@@ -13,7 +13,6 @@
   font-weight: 400;
   src: url("../fonts/Roboto-Regular.ttf");
 }
-/* base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +28,28 @@ body {
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
+}
+
+#page-description {
+  padding: 200px 120px;
+}
+
+#page-pricing,
+#page-news,
+#page-popular-track,
+#page-discography {
+  padding: 100px 120px 0;
+}
+
+#page-app,
+#page-similar {
+  padding: 100px 120px;
+}
+
+#page-popular-track,
+#page-discography,
+#page-similar {
+  text-align: left;
 }
 
 h1,
@@ -57,7 +78,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 200px 20px;
   background-position: center;
   background-size: cover;
 }
@@ -178,17 +198,10 @@ h1 {
   border: 0;
 }
 
-#page-pricing,
-#page-news,
-#page-app {
-  padding: 100px 20px 0;
-}
-
 .pricing {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 100px;
   gap: 50px;
 }
 .pricing__item {
@@ -244,7 +257,6 @@ h1 {
   display: flex;
   flex-direction: column;
   row-gap: 65px;
-  padding: 0 100px;
 }
 .news__item {
   display: flex;
@@ -300,7 +312,6 @@ h1 {
 .app {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 100px;
   column-gap: 144px;
 }
 .app__description {
@@ -332,7 +343,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   column-gap: 4%;
-  padding: 3rem 100px;
+  padding: 3rem 120px;
   border-bottom: 1px solid #cacaca;
 }
 .footer__items {
@@ -353,7 +364,7 @@ h1 {
   padding: 30px 0 15px;
 }
 .footer__botom-block {
-  padding: 2rem 100px;
+  padding: 2rem 120px;
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -386,7 +397,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 50px 100px 24px;
+  padding: 50px 0 24px;
 }
 .banner-artist__supporters {
   padding-top: 1em;
@@ -430,10 +441,6 @@ h1 {
   background-image: url("../images/heart.svg");
 }
 
-.page-popular-track {
-  padding: 100px 120px 0;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -466,12 +473,6 @@ h1 {
 .pop-track__artist {
   color: #E0E0E0;
 }
-#page-discography,
-#page-similar {
-  padding: 100px 120px 0;
-  text-align: left;
-}
-
 .discography,
 .similar {
   display: flex;
@@ -521,33 +522,32 @@ h1 {
   .header__search {
     margin: 15px;
   }
-  .pricing,
-.news,
-.app {
-    padding: 0;
-  }
   .pricing__title,
 .news__title,
 .app__title {
     font-size: 16px;
   }
-  .banner-artist {
-    padding: 50px 0 24px;
+  #page-description {
+    padding: 200px 120px;
   }
-  .page-popular-track {
+  #page-pricing,
+#page-news,
+#page-popular-track,
+#page-discography {
     padding: 100px 20px 0;
   }
-  #page-discography,
+  #page-app,
 #page-similar {
-    padding: 100px 20px 0;
+    padding: 100px 20px;
   }
 }
 @media (max-width: 576px) {
-  .banner {
+  #page-description {
     padding: 250px 20px 200px;
   }
   .header {
     flex-direction: column;
+    font-weight: bold;
   }
   .header__search {
     margin: 0;
@@ -571,7 +571,7 @@ h1 {
     order: 0;
   }
   .app__image {
-    order: -1;
+    order: 0;
     margin: 0 auto;
   }
   .footer__top-block,
