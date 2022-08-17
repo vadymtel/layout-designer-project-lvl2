@@ -67,10 +67,10 @@ h1 {
 
 .page-title {
   font-size: 38px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .page-title_pricing {
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .banner {
@@ -473,6 +473,7 @@ h1 {
 .pop-track__artist {
   color: #E0E0E0;
 }
+
 .discography,
 .similar {
   display: flex;
@@ -491,7 +492,7 @@ h1 {
 }
 .discography__name,
 .similar__name {
-  padding-top: 18px;
+  margin-top: 18px;
   font-size: 18px;
   text-transform: capitalize;
 }

@@ -56,10 +56,10 @@ h1 {
 
 .page-title {
     font-size: 38px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 
     &_pricing {
-        padding-bottom: 45px;
+        margin-bottom: 45px;
     }
 }
 
@@ -549,7 +549,7 @@ h1 {
     }
 
     &__name {
-        padding-top: 18px;
+        margin-top: 18px;
         font-size: 18px;
         text-transform: capitalize;
     }
