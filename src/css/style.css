@@ -483,6 +483,8 @@ h1 {
 }
 .discography__item,
 .similar__item {
+  display: flex;
+  flex-direction: column;
   width: 250px;
 }
 .discography__image,

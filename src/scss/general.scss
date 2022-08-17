@@ -540,6 +540,8 @@ h1 {
     gap: 25px 50px;
 
     &__item {
+        display: flex;
+        flex-direction: column;
         width: 250px;
     }
 
