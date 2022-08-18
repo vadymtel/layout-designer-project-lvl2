@@ -77,7 +77,12 @@ h4 {
 .page-title {
   max-width: 1200px;
   font-size: 38px;
-  margin: 0 auto 48px;
+  /* margin: 0 auto 48px; */
+  margin-bottom: 48px;
+}
+.page-title_main-page {
+  /* margin: 0 auto 31px; */
+  margin-bottom: 31px;
 }
 
 .banner {
@@ -534,6 +539,9 @@ ul {
   }
   .page-title {
     font-size: 18px;
+  }
+  .page-title_main-page {
+    margin: 0 auto 16px;
   }
   .header {
     padding: 0 20px;
