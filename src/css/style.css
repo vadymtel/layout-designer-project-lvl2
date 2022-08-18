@@ -69,11 +69,9 @@ h1 {
 }
 
 .page-title {
+  max-width: 1200px;
   font-size: 38px;
-  margin-bottom: 48px;
-  /*   &_pricing {
-      margin-bottom: 45px;
-  } */
+  margin: 0 auto 48px;
 }
 
 .banner {
