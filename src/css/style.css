@@ -100,7 +100,7 @@ h4 {
   background-image: url("../images/morten_harket.png");
 }
 .banner_text {
-  margin: 31px auto 16px;
+  margin-bottom: 16px;
 }
 
 .header {
@@ -541,7 +541,7 @@ ul {
     font-size: 18px;
   }
   .page-title_main-page {
-    margin: 0 auto 16px;
+    margin-bottom: 16px;
   }
   .header {
     padding: 0 20px;
