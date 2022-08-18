@@ -238,7 +238,7 @@ h1 {
   line-height: 1em;
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .pricing__value_currency {
   font-size: 0.5em;
@@ -252,7 +252,7 @@ h1 {
 }
 .pricing__description {
   font-size: 12.8px;
-  padding: 64px 0;
+  margin: 64px 0;
 }
 .pricing_text {
   margin: -10px auto 0;
@@ -530,7 +530,7 @@ ul {
     font-size: 16px;
   }
   #page-description {
-    padding: 200px 120px;
+    padding: 200px 20px;
   }
   #page-pricing,
 #page-news,
@@ -544,9 +544,9 @@ ul {
   }
 }
 @media (max-width: 576px) {
-  #page-description {
-    padding: 250px 20px 200px;
-  }
+  /*     #page-description {
+      padding: 250px 20px 200px;
+  } */
   .header {
     flex-direction: column;
     font-weight: bold;

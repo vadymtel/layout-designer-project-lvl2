@@ -251,7 +251,7 @@ h1 {
         line-height: 1em;
         margin: 0;
         padding: 0;
-        padding-bottom: 40px;
+        margin-bottom: 40px;
 
         &_currency {
             font-size: 0.5em;
@@ -269,7 +269,7 @@ h1 {
 
     &__description {
         font-size: 12.8px;
-        padding: 64px 0;
+        margin: 64px 0;
     }
 
     &_text {
@@ -593,7 +593,7 @@ ul {
     }
 
     #page-description {
-        padding: 200px 120px;
+        padding: 200px 20px;
     }
 
     #page-pricing,
@@ -611,9 +611,9 @@ ul {
 
 
 @media (max-width: 576px) {
-    #page-description {
+    /*     #page-description {
         padding: 250px 20px 200px;
-    }
+    } */
 
     .header {
         flex-direction: column;
