@@ -347,12 +347,8 @@ h4 {
     }
 
     &__avatar {
-        display: inline-block;
         width: 19px;
         height: 19px;
-        background-image: url("../images/avatar.png");
-        background-size: contain;
-        background-position: center;
     }
 
     &__btn {
