@@ -96,6 +96,7 @@ h4 {
     }
 
     &_text {
+        color: $white;
         margin-bottom: 16px;
     }
 }
@@ -129,6 +130,7 @@ h4 {
         &::placeholder {
             font-family: Arial, sans-serif;
             font-size: 13.3px;
+            text-transform: uppercase;
             color: $search-color;
             padding-left: 10px;
         }

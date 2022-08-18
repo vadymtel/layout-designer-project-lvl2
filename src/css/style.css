@@ -100,6 +100,7 @@ h4 {
   background-image: url("../images/morten_harket.png");
 }
 .banner_text {
+  color: #FFFFFF;
   margin-bottom: 16px;
 }
 
@@ -130,6 +131,7 @@ h4 {
 .header__search-field::placeholder {
   font-family: Arial, sans-serif;
   font-size: 13.3px;
+  text-transform: uppercase;
   color: #757575;
   padding-left: 10px;
 }
