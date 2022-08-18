@@ -128,8 +128,6 @@ h1 {
     &__image {
         width: 24px;
         height: 24px;
-        background-image: url("../images/logo.svg");
-        background-size: contain;
     }
 }
 
@@ -192,6 +190,14 @@ h1 {
         font-size: 13.3px;
         border: none;
         background-color: $green;
+    }
+
+    &__img {
+        margin-right: 16px;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        filter: invert(100%);
     }
 }
 
@@ -372,7 +378,6 @@ h1 {
 
 hr {
     margin: 8px 0;
-    width: 100%;
 }
 
 li {
@@ -454,11 +459,11 @@ ul {
 .banner-artist {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: left;
     padding: 50px 0 24px;
 
     &__supporters {
-        padding-top: 1em;
+        margin-top: 1em;
         color: $white;
     }
 
@@ -470,40 +475,18 @@ ul {
     }
 
     &__btn {
-        text-align: left;
-        vertical-align: middle;
         width: 200px;
+        text-align: left;
         font-family: "Roboto";
         font-size: 12.8px;
         border: none;
 
-        &_violet::before,
-        &_brown::before {
-            margin-right: 16px;
-            display: inline-block;
-            content: "";
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            filter: invert(100%);
-            background-size: contain;
-            background-position: center;
-        }
-
         &_violet {
             background-color: $violet;
-
-            &::before {
-                background-image: url("../images/play-button.svg");
-            }
         }
 
         &_brown {
             background-color: $brown;
-
-            &::before {
-                background-image: url("../images/heart.svg");
-            }
         }
     }
 }
