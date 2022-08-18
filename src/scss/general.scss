@@ -23,7 +23,11 @@ body {
     padding: 200px 120px;
 }
 
-#page-pricing,
+#page-pricing {
+    padding: 100px 0 0;
+}
+
+
 #page-news,
 #page-popular-track,
 #page-discography {
@@ -58,9 +62,9 @@ h1 {
     font-size: 38px;
     margin-bottom: 48px;
 
-    &_pricing {
+    /*   &_pricing {
         margin-bottom: 45px;
-    }
+    } */
 }
 
 .banner {
@@ -218,8 +222,7 @@ h1 {
     gap: 50px;
 
     &__item {
-        flex-basis: 24%;
-        flex-grow: 1;
+        flex-basis: 367px;
         flex-shrink: 1;
         padding: 0 1.5rem;
         border-radius: 1rem;
@@ -241,6 +244,7 @@ h1 {
 
     &__title {
         font-size: 24px;
+        font-weight: normal;
         margin: 1em auto 200px;
     }
 
@@ -268,13 +272,16 @@ h1 {
     }
 
     &__description {
+        color: $white;
         font-size: 12.8px;
         margin: 64px 0;
     }
+}
 
-    &_text {
-        margin: -10px auto 0;
-    }
+.page-text {
+    color: $white;
+    max-width: 1200px;
+    margin: 40px auto 0;
 }
 
 .news {
@@ -611,9 +618,9 @@ ul {
 
 
 @media (max-width: 576px) {
-    /*     #page-description {
+    #page-description {
         padding: 250px 20px 200px;
-    } */
+    }
 
     .header {
         flex-direction: column;

@@ -34,7 +34,10 @@ body {
   padding: 200px 120px;
 }
 
-#page-pricing,
+#page-pricing {
+  padding: 100px 0 0;
+}
+
 #page-news,
 #page-popular-track,
 #page-discography {
@@ -68,9 +71,9 @@ h1 {
 .page-title {
   font-size: 38px;
   margin-bottom: 48px;
-}
-.page-title_pricing {
-  margin-bottom: 45px;
+  /*   &_pricing {
+      margin-bottom: 45px;
+  } */
 }
 
 .banner {
@@ -210,8 +213,7 @@ h1 {
   gap: 50px;
 }
 .pricing__item {
-  flex-basis: 24%;
-  flex-grow: 1;
+  flex-basis: 367px;
   flex-shrink: 1;
   padding: 0 1.5rem;
   border-radius: 1rem;
@@ -229,6 +231,7 @@ h1 {
 }
 .pricing__title {
   font-size: 24px;
+  font-weight: normal;
   margin: 1em auto 200px;
 }
 .pricing__value {
@@ -251,11 +254,15 @@ h1 {
   border: 1px solid #FFFFFF;
 }
 .pricing__description {
+  color: #FFFFFF;
   font-size: 12.8px;
   margin: 64px 0;
 }
-.pricing_text {
-  margin: -10px auto 0;
+
+.page-text {
+  color: #FFFFFF;
+  max-width: 1200px;
+  margin: 40px auto 0;
 }
 
 .news {
@@ -544,9 +551,9 @@ ul {
   }
 }
 @media (max-width: 576px) {
-  /*     #page-description {
-      padding: 250px 20px 200px;
-  } */
+  #page-description {
+    padding: 250px 20px 200px;
+  }
   .header {
     flex-direction: column;
     font-weight: bold;
