@@ -19,9 +19,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -30,8 +27,17 @@ body {
   background-color: #08020d;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1240px;
+  padding: 0 20px 0;
+  margin: 0 auto 0;
+}
+
 #page-description {
-  padding: 200px 120px;
+  padding: 200px 0;
 }
 
 #page-pricing {
@@ -41,12 +47,12 @@ body {
 #page-news,
 #page-popular-track,
 #page-discography {
-  padding: 100px 120px 0;
+  padding-top: 100px;
 }
 
 #page-app,
 #page-similar {
-  padding: 100px 120px;
+  padding: 100px 0;
 }
 
 #page-popular-track,
@@ -77,30 +83,30 @@ h4 {
 .page-title {
   max-width: 1200px;
   font-size: 38px;
-  /* margin: 0 auto 48px; */
   margin-bottom: 48px;
 }
 .page-title_main-page {
-  /* margin: 0 auto 31px; */
   margin-bottom: 31px;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   background-position: center;
   background-size: cover;
 }
 .banner_bg-main {
+  align-items: center;
   background-image: url("../images/banner.png");
 }
 .banner_bg-artist {
+  align-items: center;
   background-image: url("../images/morten_harket.png");
 }
 .banner_text {
   color: #FFFFFF;
+  padding: 0 20px;
   margin-bottom: 16px;
 }
 
@@ -111,7 +117,8 @@ h4 {
   right: 0;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  max-width: 1200px;
+  justify-content: space-between;
   flex-wrap: wrap;
   font-size: 11px;
   color: #FFFFFF;
@@ -162,11 +169,12 @@ h4 {
 
 .form {
   display: flex;
+  text-align: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   max-width: 570px;
-  margin: auto;
+  margin: 0 20px;
 }
 .form__value {
   align-self: center;
@@ -224,7 +232,7 @@ h4 {
   gap: 50px;
 }
 .pricing__item {
-  flex-basis: 367px;
+  flex-basis: 366.6666666667px;
   flex-shrink: 1;
   padding: 0 1.5rem;
   border-radius: 1rem;
@@ -288,7 +296,7 @@ h4 {
 }
 .news__image {
   width: 45.5%;
-  height: auto;
+  height: max-content;
   flex-grow: 1;
 }
 .news__image_order-2 {
@@ -343,7 +351,7 @@ h4 {
 }
 .app__image {
   width: 333px;
-  height: auto;
+  height: max-content;
 }
 .app__btn {
   display: inline-block;
@@ -352,7 +360,6 @@ h4 {
   padding: 16px 40px;
   border-radius: 32px;
   background-color: #95390C;
-  margin-bottom: 100px;
 }
 
 hr {
@@ -370,6 +377,9 @@ ul {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 .footer__top-block {
@@ -381,7 +391,6 @@ ul {
 .footer__items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   flex-basis: 22%;
 }
 .footer__items_row {
@@ -395,9 +404,8 @@ ul {
   margin: 30px 0 16px;
 }
 .footer__botom-block {
-  padding: 2rem 120px;
+  padding: 2rem 120px 49px;
   display: flex;
-  align-items: flex-start;
   gap: 16px;
 }
 .footer__link {
@@ -406,29 +414,17 @@ ul {
   color: #E0E0E0;
   cursor: pointer;
 }
-.footer__link_picto_google::before {
-  content: url("../images/google+.png");
+.footer__link_picto_google, .footer__link_picto_twitter, .footer__link_picto_facebook, .footer__link_picto_instagram {
   width: fit-content;
-  height: auto;
-}
-.footer__link_picto_twitter::before {
-  content: url("../images/twitter.png");
-  width: fit-content;
-}
-.footer__link_picto_facebook::before {
-  content: url("../images/facebook.png");
-  width: fit-content;
-}
-.footer__link_picto_instagram::before {
-  content: url("../images/instagram.png");
-  width: fit-content;
+  height: fit-content;
 }
 
 .banner-artist {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0 0 24px;
+  width: 1240px;
+  padding: 0 20px 24px;
 }
 .banner-artist__supporters {
   margin-top: 1em;
@@ -503,7 +499,7 @@ ul {
 .discography__image,
 .similar__image {
   width: 100%;
-  height: auto;
+  height: max-content;
 }
 .discography__name,
 .similar__name {
@@ -547,28 +543,31 @@ ul {
   .header__search {
     margin: 15px;
   }
+  .banner-artist {
+    width: max-content;
+  }
   .pricing__title,
 .news__title,
 .app__title {
     font-size: 16px;
   }
   #page-description {
-    padding: 200px 20px;
+    padding: 200px 0;
   }
   #page-pricing,
 #page-news,
 #page-popular-track,
 #page-discography {
-    padding: 100px 20px 0;
+    padding: 100px 0 0;
   }
   #page-app,
 #page-similar {
-    padding: 100px 20px;
+    padding: 100px 0;
   }
 }
 @media (max-width: 576px) {
   #page-description {
-    padding: 200px 20px 200px;
+    padding: 200px 0;
   }
   .header {
     flex-direction: column;
@@ -596,7 +595,7 @@ ul {
     order: 0;
   }
   .app__image {
-    order: 0;
+    order: -1;
     margin: 0 auto;
   }
   .footer__top-block,
