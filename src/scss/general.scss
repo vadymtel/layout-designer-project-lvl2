@@ -57,7 +57,7 @@ h4 {
 
 .page-title {
     font-size: 38px;
-    margin: 100px 20px 48px;
+    margin: 100px 0 48px;
 
     &_main-page {
         margin: 0 20px 31px;
@@ -604,18 +604,6 @@ ul {
     #page-description {
         padding: 200px 0;
     }
-
-    #page-pricing,
-    #page-news,
-    #page-popular-track,
-    #page-discography {
-        padding: 100px 0 0;
-    }
-
-    #page-app,
-    #page-similar {
-        padding: 100px 0;
-    }
 }
 
 
@@ -634,7 +622,10 @@ ul {
     }
 
     .nav {
+        line-height: 12.89px;
+        width: max-content;
         flex-direction: column;
+        row-gap: 3px;
         align-items: flex-start;
         margin: 17px 0 18px;
     }
