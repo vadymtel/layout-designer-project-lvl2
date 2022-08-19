@@ -459,6 +459,14 @@ ul {
 .pop-track {
   display: flex;
   width: 575px;
+  /*   &__track {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+  } */
+  /*     &__artist {
+      color: $lt-gray;
+  } */
 }
 .pop-track__image {
   width: 55px;
@@ -471,15 +479,11 @@ ul {
   width: 100%;
   padding-left: 15px;
   text-align: left;
-}
-.pop-track__track {
   font-size: 12.8px;
+  color: #E0E0E0;
 }
 .pop-track__track-name {
   color: #FFFFFF;
-}
-.pop-track__artist {
-  color: #E0E0E0;
 }
 
 .discography,
