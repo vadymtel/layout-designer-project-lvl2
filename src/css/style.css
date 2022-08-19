@@ -40,21 +40,6 @@ main {
   padding: 200px 0;
 }
 
-#page-pricing {
-  padding: 100px 0 0;
-}
-
-#page-news,
-#page-popular-track,
-#page-discography {
-  padding-top: 100px;
-}
-
-#page-app,
-#page-similar {
-  padding: 100px 0;
-}
-
 #page-popular-track,
 #page-discography,
 #page-similar {
@@ -74,19 +59,18 @@ h4 {
   font-size: 60px;
 }
 .main-title_main-page {
-  margin-top: 0;
+  margin: 0 20px;
 }
 .main-title_artist-page {
   margin-top: 50px;
 }
 
 .page-title {
-  max-width: 1200px;
   font-size: 38px;
-  margin-bottom: 48px;
+  margin: 100px 20px 48px;
 }
 .page-title_main-page {
-  margin-bottom: 31px;
+  margin: 0 20px 31px;
 }
 
 .banner {
@@ -97,7 +81,6 @@ h4 {
   background-size: cover;
 }
 .banner_bg-main {
-  align-items: center;
   background-image: url("../images/banner.png");
 }
 .banner_bg-artist {
@@ -106,8 +89,7 @@ h4 {
 }
 .banner_text {
   color: #FFFFFF;
-  padding: 0 20px;
-  margin-bottom: 16px;
+  margin: 0 20px 16px;
 }
 
 .header {
@@ -117,8 +99,8 @@ h4 {
   right: 0;
   margin: 0 auto;
   display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
+  max-width: 1240px;
+  padding: 0 20px 0;
   flex-wrap: wrap;
   font-size: 11px;
   color: #FFFFFF;
@@ -126,7 +108,7 @@ h4 {
   z-index: 2;
 }
 .header__search {
-  margin-left: 31.3%;
+  margin-left: 451px;
 }
 .header__search-field {
   min-width: 248px;
@@ -146,11 +128,11 @@ h4 {
 .logo {
   display: flex;
   align-items: center;
-  column-gap: 16px;
 }
 .logo__image {
   width: 24px;
   height: 24px;
+  margin-right: 16px;
 }
 
 .nav {
@@ -170,6 +152,7 @@ h4 {
 .form {
   display: flex;
   text-align: center;
+  align-self: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
@@ -544,7 +527,7 @@ ul {
     margin: 15px;
   }
   .banner-artist {
-    width: max-content;
+    width: auto;
   }
   .pricing__title,
 .news__title,

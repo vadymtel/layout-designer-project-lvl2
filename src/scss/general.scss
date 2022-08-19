@@ -28,22 +28,6 @@ main {
     padding: 200px 0;
 }
 
-#page-pricing {
-    padding: 100px 0 0;
-}
-
-
-#page-news,
-#page-popular-track,
-#page-discography {
-    padding-top: 100px;
-}
-
-#page-app,
-#page-similar {
-    padding: 100px 0;
-}
-
 #page-popular-track,
 #page-discography,
 #page-similar {
@@ -63,7 +47,7 @@ h4 {
     font-size: 60px;
 
     &_main-page {
-        margin-top: 0;
+        margin: 0 20px;
     }
 
     &_artist-page {
@@ -72,12 +56,11 @@ h4 {
 }
 
 .page-title {
-    max-width: 1200px;
     font-size: 38px;
-    margin-bottom: 48px;
+    margin: 100px 20px 48px;
 
     &_main-page {
-        margin-bottom: 31px;
+        margin: 0 20px 31px;
     }
 }
 
@@ -90,7 +73,6 @@ h4 {
     background-size: cover;
 
     &_bg-main {
-        align-items: center;
         background-image: url("../images/banner.png");
     }
 
@@ -101,8 +83,7 @@ h4 {
 
     &_text {
         color: $white;
-        padding: 0 20px;
-        margin-bottom: 16px;
+        margin: 0 20px 16px;
     }
 }
 
@@ -113,8 +94,8 @@ h4 {
     right: 0;
     margin: 0 auto;
     display: flex;
-    max-width: 1200px;
-    justify-content: space-between;
+    max-width: 1240px;
+    padding: 0 20px 0;
     flex-wrap: wrap;
     font-size: 11px;
     color: $white;
@@ -122,7 +103,7 @@ h4 {
     z-index: 2;
 
     &__search {
-        margin-left: 31.3%;
+        margin-left: 451px;
     }
 
     &__search-field {
@@ -146,11 +127,11 @@ h4 {
 .logo {
     display: flex;
     align-items: center;
-    column-gap: 16px;
 
     &__image {
         width: 24px;
         height: 24px;
+        margin-right: 16px;
     }
 }
 
@@ -173,6 +154,7 @@ h4 {
 .form {
     display: flex;
     text-align: center;
+    align-self: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
@@ -608,7 +590,7 @@ ul {
     }
 
     .banner-artist {
-        width: max-content;
+        width: auto;
     }
 
     .pricing,
