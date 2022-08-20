@@ -611,6 +611,9 @@ ul {
     align-items: stretch;
     width: 100%;
   }
+  .footer__link {
+    align-self: unset;
+  }
   .footer__items {
     justify-content: unset;
   }
