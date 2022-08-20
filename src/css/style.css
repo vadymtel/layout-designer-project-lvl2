@@ -384,14 +384,17 @@ ul {
 .footer__top-block {
   width: 86.1%;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   column-gap: 4%;
+  row-gap: 30px;
   padding: 62px 20px;
   margin: 0 auto 0;
 }
 .footer__items {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   flex-basis: 22%;
   text-align: left;
 }
@@ -408,9 +411,12 @@ ul {
 .footer__botom-block {
   width: 86.1%;
   margin: 0 auto;
-  padding: 2rem 20px;
+  padding: 32px 20px 48px;
   display: flex;
   gap: 16px;
+}
+.footer__link-address {
+  padding: 0;
 }
 .footer__link {
   text-decoration: none;
