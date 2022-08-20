@@ -386,15 +386,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
   column-gap: 4%;
-  padding: 3rem 20px;
+  padding: 62px 20px;
   margin: 0 auto 0;
 }
 .footer__items {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   flex-basis: 22%;
   text-align: left;
-  margin-bottom: 24px;
 }
 .footer__items_row {
   display: flex;
@@ -404,11 +404,11 @@ ul {
 .footer__item {
   font-size: 18px;
   color: #FFFFFF;
-  margin: 30px 0 16px;
+  margin: 0 0 16px;
 }
 .footer__botom-block {
   width: 86.1%;
-  margin: 0 auto 0;
+  margin: 0 auto 8px;
   padding: 2rem 20px;
   display: flex;
   gap: 16px;
