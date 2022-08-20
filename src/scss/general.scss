@@ -417,10 +417,12 @@ ul {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
     &__top-block {
+        width: 86.1%;
         display: flex;
         flex-wrap: wrap;
         column-gap: 4%;
-        padding: 3rem 120px;
+        padding: 3rem 20px;
+        margin: 0 auto 0;
     }
 
     &__items {
@@ -428,6 +430,7 @@ ul {
         flex-direction: column;
         flex-basis: 22%;
         text-align: left;
+        margin-bottom: 24px;
 
         &_row {
             display: flex;
@@ -443,8 +446,9 @@ ul {
     }
 
     &__botom-block {
-
-        padding: 2rem 120px 49px;
+        width: 86.1%;
+        margin: 0 auto 0;
+        padding: 2rem 20px;
         display: flex;
         gap: 16px;
     }
@@ -463,11 +467,6 @@ ul {
             width: 100%;
             height: 100%;
         }
-    }
-
-    &__address {
-        font-size: 15px;
-        line-height: 24px;
     }
 }
 
@@ -683,8 +682,6 @@ ul {
     .footer__top-block,
     .footer__botom-block {
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .discography__item,
