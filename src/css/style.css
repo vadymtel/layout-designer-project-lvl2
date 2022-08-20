@@ -292,7 +292,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  column-gap: 50px;
+  gap: 50px;
 }
 .news__image {
   width: 45.5%;
@@ -308,7 +308,7 @@ h4 {
 }
 .news__title {
   font-size: 30px;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   text-transform: capitalize;
 }
 .news__footer {
@@ -611,11 +611,13 @@ ul {
     align-items: stretch;
     width: 100%;
   }
-  .footer__link {
-    align-self: unset;
-  }
   .footer__items {
     justify-content: unset;
+  }
+  .discography__item,
+.similar__item {
+    height: fit-content;
+    width: 137px;
   }
 }
 

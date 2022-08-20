@@ -311,7 +311,7 @@ h4 {
         display: flex;
         flex-wrap: wrap;
         text-align: left;
-        column-gap: 50px;
+        gap: 50px;
     }
 
     &__image {
@@ -332,7 +332,7 @@ h4 {
 
     &__title {
         font-size: 30px;
-        padding-bottom: 1em;
+        margin-bottom: 1em;
         text-transform: capitalize;
     }
 
@@ -694,11 +694,15 @@ ul {
         width: 100%;
     }
 
-    .footer__link {
-        align-self: unset;
-    }
-
     .footer__items {
         justify-content: unset;
+    }
+
+    .discography,
+    .similar {
+        &__item {
+            height: fit-content;
+            width: 137px;
+        }
     }
 }
