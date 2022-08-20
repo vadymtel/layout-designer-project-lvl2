@@ -428,7 +428,6 @@ ul {
     &__items {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         flex-basis: 22%;
         text-align: left;
 
@@ -447,7 +446,7 @@ ul {
 
     &__botom-block {
         width: 86.1%;
-        margin: 0 auto 8px;
+        margin: 0 auto;
         padding: 2rem 20px;
         display: flex;
         gap: 16px;
@@ -458,6 +457,7 @@ ul {
         font-size: 16px;
         color: $lt-gray;
         cursor: pointer;
+        align-self: flex-start;
 
         &_picto_google,
         &_picto_twitter,

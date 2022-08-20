@@ -392,7 +392,6 @@ ul {
 .footer__items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   flex-basis: 22%;
   text-align: left;
 }
@@ -408,7 +407,7 @@ ul {
 }
 .footer__botom-block {
   width: 86.1%;
-  margin: 0 auto 8px;
+  margin: 0 auto;
   padding: 2rem 20px;
   display: flex;
   gap: 16px;
@@ -418,6 +417,7 @@ ul {
   font-size: 16px;
   color: #E0E0E0;
   cursor: pointer;
+  align-self: flex-start;
 }
 .footer__link_picto_google, .footer__link_picto_twitter, .footer__link_picto_facebook, .footer__link_picto_instagram {
   vertical-align: middle;
