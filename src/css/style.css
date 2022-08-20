@@ -279,7 +279,6 @@ h4 {
 
 .page-text {
   color: #FFFFFF;
-  max-width: 1200px;
   margin: 40px auto 0;
 }
 
@@ -287,10 +286,12 @@ h4 {
   display: flex;
   flex-direction: column;
   row-gap: 65px;
+  text-align: left;
 }
 .news__item {
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
   column-gap: 50px;
 }
 .news__image {
@@ -304,7 +305,6 @@ h4 {
 .news__body {
   width: 45.5%;
   flex-grow: 1;
-  text-align: left;
 }
 .news__title {
   font-size: 30px;
