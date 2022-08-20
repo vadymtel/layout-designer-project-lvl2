@@ -391,6 +391,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex-basis: 22%;
+  text-align: left;
 }
 .footer__items_row {
   display: flex;
@@ -414,8 +415,13 @@ ul {
   cursor: pointer;
 }
 .footer__link_picto_google, .footer__link_picto_twitter, .footer__link_picto_facebook, .footer__link_picto_instagram {
+  vertical-align: middle;
   width: 100%;
   height: 100%;
+}
+.footer__address {
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .banner-artist {
