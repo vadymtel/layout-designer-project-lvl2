@@ -327,7 +327,7 @@ h4 {
     }
 
     &__body {
-        max-width: 575px;
+        display: inline-block;
         width: 45.5%;
         flex-shrink: 1;
     }

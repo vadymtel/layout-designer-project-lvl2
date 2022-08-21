@@ -296,16 +296,16 @@ h4 {
   gap: 50px;
 }
 .news__image {
-  /* width: 45.5%; */
-  flex-basis: 575px;
+  display: inline-block;
+  width: 45.5%;
   flex-shrink: 1;
 }
 .news__image_order-2 {
   order: 2;
 }
 .news__body {
-  /* width: 45.5%; */
-  flex-basis: 575px;
+  display: inline-block;
+  width: 45.5%;
   flex-shrink: 1;
 }
 .news__title {
