@@ -318,6 +318,7 @@ h4 {
         width: 45.5%;
         height: fit-content;
         flex-grow: 1;
+        flex-shrink: 1;
 
         &_order-2 {
             order: 2;
