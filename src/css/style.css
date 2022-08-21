@@ -284,7 +284,9 @@ h4 {
 
 .news {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   row-gap: 65px;
   text-align: left;
 }
@@ -296,7 +298,7 @@ h4 {
 }
 .news__image {
   width: 45.5%;
-  height: 100%;
+  height: fit-content;
   flex-grow: 1;
 }
 .news__image_order-2 {
@@ -350,7 +352,7 @@ h4 {
 }
 .app__image {
   width: 333px;
-  height: 100%;
+  height: fit-content;
 }
 .app__btn {
   display: inline-block;
