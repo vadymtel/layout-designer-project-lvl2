@@ -308,6 +308,7 @@ h4 {
 }
 .news__title {
   font-size: 30px;
+  font-weight: 400;
   margin-bottom: 1em;
   text-transform: capitalize;
 }
@@ -537,7 +538,7 @@ ul {
   color: #E0E0E0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .main-title {
     font-size: 30px;
   }
@@ -563,9 +564,11 @@ ul {
     width: auto;
   }
   .pricing__title,
-.news__title,
-.app__title {
+.news__title {
     font-size: 16px;
+  }
+  .news__title {
+    font-weight: 400;
   }
 }
 @media (max-width: 576px) {
