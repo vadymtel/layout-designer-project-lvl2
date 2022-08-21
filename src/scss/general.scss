@@ -303,7 +303,7 @@ h4 {
 
 .news {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     row-gap: 65px;
     text-align: left;
 
@@ -316,7 +316,7 @@ h4 {
 
     &__image {
         width: 45.5%;
-        height: 100%;
+        height: fit-content;
         flex-grow: 1;
 
         &_order-2 {
@@ -374,7 +374,6 @@ h4 {
 
     &__description {
         flex-basis: 50%;
-        flex-grow: 1;
         text-align: left;
     }
 
@@ -384,7 +383,7 @@ h4 {
 
     &__image {
         width: 333px;
-        height: 100%;
+        height: fit-content;
     }
 
     &__btn {
@@ -542,19 +541,10 @@ ul {
         color: $lt-gray;
     }
 
-    /*   &__track {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    } */
-
     &__track-name {
+        font-size: 12.8px;
         color: $white;
     }
-
-    /*     &__artist {
-        color: $lt-gray;
-    } */
 }
 
 .discography,
@@ -638,6 +628,10 @@ ul {
 
     .news__title {
         font-weight: 400;
+    }
+
+    .app__description {
+        flex-grow: 1;
     }
 }
 
