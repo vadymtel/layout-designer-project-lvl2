@@ -284,6 +284,7 @@ h4 {
 
 .news {
   display: flex;
+  justify-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
   /* flex-direction: column; */
@@ -293,13 +294,14 @@ h4 {
 .news__item {
   display: flex;
   flex-wrap: wrap;
-  text-align: left;
+  justify-content: flex-start;
   gap: 50px;
 }
 .news__image {
   width: 45.5%;
-  height: auto;
+  height: min-content;
   flex-grow: 1;
+  flex-shrink: 1;
 }
 .news__image_order-2 {
   order: 2;
