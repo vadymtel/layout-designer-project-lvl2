@@ -299,7 +299,6 @@ h4 {
 }
 .news__image {
   width: 45.5%;
-  height: min-content;
   flex-grow: 1;
   flex-shrink: 1;
 }
