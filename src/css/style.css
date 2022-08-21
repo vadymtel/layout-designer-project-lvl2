@@ -296,6 +296,7 @@ h4 {
   gap: 50px;
 }
 .news__image {
+  display: inline;
   width: 45.5%;
   flex-grow: 1;
 }
