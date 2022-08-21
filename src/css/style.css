@@ -296,16 +296,17 @@ h4 {
   gap: 50px;
 }
 .news__image {
-  display: inline;
-  width: 45.5%;
-  flex-grow: 1;
+  /* width: 45.5%; */
+  flex-basis: 575px;
+  flex-shrink: 1;
 }
 .news__image_order-2 {
   order: 2;
 }
 .news__body {
-  width: 45.5%;
-  flex-grow: 1;
+  /* width: 45.5%; */
+  flex-basis: 575px;
+  flex-shrink: 1;
 }
 .news__title {
   font-size: 30px;
@@ -538,7 +539,7 @@ ul {
   color: #E0E0E0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .main-title {
     font-size: 30px;
   }
