@@ -303,6 +303,7 @@ h4 {
 
 .news {
     display: flex;
+    justify-content: flex-start;
     width: 100%;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -318,7 +319,7 @@ h4 {
 
     &__image {
         width: 45.5%;
-        height: fit-content;
+        height: auto;
         flex-grow: 1;
 
         &_order-2 {

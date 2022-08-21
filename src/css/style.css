@@ -298,7 +298,7 @@ h4 {
 }
 .news__image {
   width: 45.5%;
-  height: fit-content;
+  height: auto;
   flex-grow: 1;
 }
 .news__image_order-2 {
