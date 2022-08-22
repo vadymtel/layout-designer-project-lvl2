@@ -1,18 +1,21 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-weight: 700;
   src: url("../fonts/Roboto-Bold.ttf");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-weight: 500;
   src: url("../fonts/Roboto-Medium.ttf");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-weight: 400;
   src: url("../fonts/Roboto-Regular.ttf");
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +23,7 @@
 
 body {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #cacaca;
@@ -44,7 +47,7 @@ body {
 #page-similar {
   max-width: 1240px;
   padding: 100px 20px 0;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
 #page-app,
@@ -67,16 +70,18 @@ h2,
 h3,
 h4 {
   font-weight: bold;
-  color: #FFFFFF;
+  color: #fff;
   text-transform: uppercase;
 }
 
 .main-title {
   font-size: 60px;
 }
+
 .main-title_main-page {
   margin: 0 20px;
 }
+
 .main-title_artist-page {
   margin-top: 50px;
 }
@@ -85,6 +90,7 @@ h4 {
   font-size: 38px;
   margin-bottom: 48px;
 }
+
 .page-title_main-page {
   margin: 0 20px 31px;
 }
@@ -96,15 +102,18 @@ h4 {
   background-position: center;
   background-size: cover;
 }
+
 .banner_bg-main {
   background-image: url("../images/banner.png");
 }
+
 .banner_bg-artist {
   align-items: center;
   background-image: url("../images/morten_harket.png");
 }
+
 .banner_text {
-  color: #FFFFFF;
+  color: #fff;
   margin: 0 20px 16px;
 }
 
@@ -116,23 +125,26 @@ h4 {
   margin: 0 auto;
   display: flex;
   max-width: 1240px;
-  padding: 0 20px 0;
+  padding: 0 20px;
   flex-wrap: wrap;
   font-size: 11px;
-  color: #FFFFFF;
+  color: #fff;
   text-transform: uppercase;
   z-index: 2;
 }
+
 .header__search {
   margin-left: 451px;
 }
+
 .header__search-field {
   min-width: 248px;
   height: 25px;
   border: none;
   border-radius: 50px;
-  background-color: #3C3B3D;
+  background-color: #3c3b3d;
 }
+
 .header__search-field::placeholder {
   font-family: Arial, sans-serif;
   font-size: 13.3px;
@@ -145,6 +157,7 @@ h4 {
   display: flex;
   align-items: center;
 }
+
 .logo__image {
   width: 24px;
   height: 24px;
@@ -157,12 +170,14 @@ h4 {
   margin-left: 90px;
   column-gap: 24px;
 }
+
 .nav__item {
   text-decoration: none;
   color: #cacaca;
 }
+
 .nav__item_white {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .form {
@@ -175,6 +190,7 @@ h4 {
   max-width: 570px;
   margin: 0 20px;
 }
+
 .form__value {
   align-self: center;
   min-width: 270px;
@@ -184,8 +200,9 @@ h4 {
   border-radius: 3px;
   background: none;
 }
+
 .form__value::placeholder {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
 }
@@ -194,18 +211,20 @@ h4 {
   display: block;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  color: #FFFFFF;
+  color: #fff;
   padding: 20px 30px;
   text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .btn_registration {
   width: 100%;
   font-size: 13.3px;
   border: none;
-  background-color: #34C176;
+  background-color: #34c176;
 }
+
 .btn__img {
   margin-right: 16px;
   width: 20px;
@@ -230,6 +249,7 @@ h4 {
   flex-wrap: wrap;
   gap: 50px;
 }
+
 .pricing__item {
   display: flex;
   flex-direction: column;
@@ -240,47 +260,55 @@ h4 {
   background-position: center;
   background-size: cover;
 }
+
 .pricing__item_bg-chart {
   background-image: url("../images/subscribe_chart.png");
 }
+
 .pricing__item_bg-microphone {
   background-image: url("../images/subscribe_microphone.png");
 }
+
 .pricing__item_bg-nightclub {
   background-image: url("../images/subscribe_nightclub.png");
 }
+
 .pricing__title {
   font-size: 24px;
   font-weight: normal;
   margin: 1em auto 200px;
 }
+
 .pricing__value {
   text-transform: uppercase;
   font-size: 64px;
-  color: #FFFFFF;
+  color: #fff;
   line-height: 1em;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
 }
+
 .pricing__value_currency {
   font-size: 0.5em;
   padding-left: 16px;
   line-height: 1.5;
   vertical-align: top;
 }
+
 .pricing__btn {
   font-size: 16px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
 }
+
 .pricing__description {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 12.8px;
   margin: 64px 0;
 }
 
 .page-text {
-  color: #FFFFFF;
+  color: #fff;
   margin: 40px auto 0;
 }
 
@@ -290,51 +318,61 @@ h4 {
   row-gap: 65px;
   text-align: left;
 }
+
 .news__item {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
   gap: 50px;
 }
+
 .news__image {
   width: 45.5%;
   flex-grow: 1;
 }
+
 .news__image_order-2 {
   order: 2;
 }
+
 .news__body {
   width: 45.5%;
   flex-grow: 1;
 }
+
 .news__title {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 1em;
   text-transform: capitalize;
 }
+
 .news__footer {
   padding-top: 24px;
 }
+
 .news__author {
   display: flex;
   gap: 16px;
   text-transform: uppercase;
   font-size: 12.8px;
 }
+
 .news__author_orange {
-  color: #F89202;
+  color: #f89202;
 }
+
 .news__avatar {
   width: 19px;
   height: 19px;
 }
+
 .news__btn {
   display: inline-block;
   margin-top: 48px;
   font-size: 12.8px;
   padding: 16px 30px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
 }
 
 .app {
@@ -342,24 +380,28 @@ h4 {
   flex-wrap: wrap;
   column-gap: 144px;
 }
+
 .app__description {
   flex-basis: 50%;
   text-align: left;
 }
+
 .app__text {
   margin: 16px 0;
 }
+
 .app__image {
   width: 333px;
   height: fit-content;
 }
+
 .app__btn {
   display: inline-block;
   text-transform: capitalize;
   font-size: 12.8px;
   padding: 16px 40px;
   border-radius: 32px;
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
 hr {
@@ -382,11 +424,13 @@ ul {
   text-align: left;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
+
 .footer__wrapper {
   max-width: 1240px;
   padding: 0 20px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
+
 .footer__top-block {
   /* width: 1200px; */
   max-width: 100%;
@@ -396,9 +440,12 @@ ul {
   column-gap: 4%;
   row-gap: 30px;
   padding: 62px 0;
+
   /* padding: 62px 20px; */
+
   /* margin: 0 auto 0; */
 }
+
 .footer__items {
   display: flex;
   flex-direction: column;
@@ -406,35 +453,51 @@ ul {
   flex-basis: 22%;
   text-align: left;
 }
+
 .footer__items_row {
   display: flex;
   align-items: baseline;
   column-gap: 24px;
 }
+
 .footer__item {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 0 0 16px;
 }
+
 .footer__botom-block {
   /* width: 1200px; */
+
   /* margin: 0 auto; */
   padding: 32px 0 48px;
+
   /* padding: 32px 20px 48px; */
   display: flex;
   gap: 16px;
 }
+
 .footer__link-address {
   padding: 0;
 }
-.footer__link, .footer__link-a {
+
+.footer__link,
+.footer__link-a {
   text-decoration: none;
   font-size: 16px;
-  color: #E0E0E0;
+  color: #e0e0e0;
   cursor: pointer;
   align-self: flex-start;
 }
-.footer__link_picto_google, .footer__link_picto_twitter, .footer__link_picto_facebook, .footer__link_picto_instagram, .footer__link-a_picto_google, .footer__link-a_picto_twitter, .footer__link-a_picto_facebook, .footer__link-a_picto_instagram {
+
+.footer__link_picto_google,
+.footer__link_picto_twitter,
+.footer__link_picto_facebook,
+.footer__link_picto_instagram,
+.footer__link-a_picto_google,
+.footer__link-a_picto_twitter,
+.footer__link-a_picto_facebook,
+.footer__link-a_picto_instagram {
   vertical-align: middle;
   width: 100%;
   height: 100%;
@@ -447,28 +510,33 @@ ul {
   width: 1240px;
   padding: 0 20px 24px;
 }
+
 .banner-artist__supporters {
   margin-top: 1em;
-  color: #FFFFFF;
+  color: #fff;
 }
+
 .banner-artist__btn-wrapper {
   margin: 48px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+
 .banner-artist__btn {
   width: 200px;
   text-align: left;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 12.8px;
   border: none;
 }
+
 .banner-artist__btn_violet {
-  background-color: #5328A1;
+  background-color: #5328a1;
 }
+
 .banner-artist__btn_brown {
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
 .wrapper {
@@ -482,10 +550,12 @@ ul {
   display: flex;
   width: 575px;
 }
+
 .pop-track__image {
   width: 55px;
   height: 55px;
 }
+
 .pop-track__track-info {
   display: flex;
   justify-content: space-between;
@@ -494,11 +564,12 @@ ul {
   padding-left: 15px;
   text-align: left;
   font-size: 12.8px;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
+
 .pop-track__track-name {
   font-size: 12.8px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .discography,
@@ -508,17 +579,20 @@ ul {
   flex-wrap: wrap;
   gap: 25px 50px;
 }
+
 .discography__item,
 .similar__item {
   display: flex;
   flex-direction: column;
   width: 250px;
 }
+
 .discography__image,
 .similar__image {
   width: 100%;
   height: 100%;
 }
+
 .discography__name,
 .similar__name {
   margin-top: 18px;
@@ -536,58 +610,72 @@ ul {
 
 .discography__year,
 .similar__supporters {
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 @media (max-width: 1200px) {
   .main-title {
     font-size: 30px;
   }
+
   .main-title_main-page {
     margin-top: 48px;
   }
+
   .main-title_artist-page {
     margin-top: 25px;
   }
+
   .page-title {
     font-size: 18px;
   }
+
   .page-title_main-page {
     margin-bottom: 16px;
   }
+
   .header {
     padding: 0 20px;
   }
+
   .header__search {
     margin: 15px;
   }
+
   .banner-artist {
     width: auto;
   }
+
   .pricing__title,
-.news__title {
+  .news__title {
     font-size: 16px;
   }
+
   .news__title {
     font-weight: 400;
   }
+
   .app__description {
     flex-grow: 1;
   }
-  /* 
+
+  /*
   .footer__top-block,
   .footer__botom-block {
       width: 86.1%;
   } */
 }
+
 @media (max-width: 576px) {
   .header {
     flex-direction: column;
     font-weight: bold;
   }
+
   .header__search {
     margin: 0;
   }
+
   .nav {
     line-height: 12.89px;
     width: fit-content;
@@ -596,44 +684,52 @@ ul {
     align-items: flex-start;
     margin: 17px 0 18px;
   }
+
   .header__search-field {
     width: 100%;
   }
+
   .form__value {
     width: 100%;
   }
+
   .pricing__item {
     min-width: 100%;
   }
+
   .pricing__title {
     font-size: 16px;
     margin: 16px auto 200px;
   }
+
   .news__image {
     order: 0;
   }
+
   .app__image {
     order: -1;
     margin: 0 auto;
   }
+
   .footer__top-block,
-.footer__botom-block {
+  .footer__botom-block {
     margin: 0;
     flex-direction: column;
     align-items: stretch;
     width: 100%;
   }
+
   .footer__link {
     align-self: unset;
   }
+
   .footer__items {
     justify-content: unset;
   }
+
   .discography__item,
-.similar__item {
+  .similar__item {
     height: fit-content;
     width: 137px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
